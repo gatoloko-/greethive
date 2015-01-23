@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Heineken";
+  src: url("/font/HEINEKEN.eot?") format("eot"), url("/font/HEINEKEN.woff") format("woff"), url("/font/HEINEKEN.ttf") format("truetype"), url("/font/HEINEKEN.svg#Heineken") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background: url(../img/bck.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.land {
+  height: 100vh; }
+
+header {
+  width: 100%;
+  height: 140px;
+  background: #F1F1F2; }
+
+.header-main {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 140px; }
+
+.branding {
+  float: left;
+  width: 650px;
+  height: 140px; }
+  .branding h1 {
+    margin: 0px; }
+
+.title {
+  text-align: left;
+  margin-left: 20px;
+  font-family: "Heineken";
+  font-size: 70px;
+  vertical-align: middle;
+  clear: right; }
+
+.subtitle {
+  position: relative;
+  font-family: 'Quando', serif;
+  font-size: 12; }
+
+.subt-container {
+  clear: left; }
+
+.logo {
+  float: left;
+  height: 125px;
+  margin-top: 10px;
+  padding-right: 20px; }
+
+.login {
+  float: left;
+  margin-top: 17px;
+  margin-left: 15px; }
+  .login input {
+    width: 250px;
+    padding: 7px;
+    font-family: 'Quando', serif;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 0px; }
+  .login button {
+    margin-top: 5px;
+    text-align: left;
+    background: #F7931D;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 0px;
+    padding: 10px;
+    font-family: 'Quando', serif;
+    -webkit-box-shadow: 8px 8px 10px 0 #858585;
+    box-shadow: 8px 8px 10px 0 #858585; }
+  .login select {
+    width: 70px;
+    padding: 10px;
+    font-family: 'Quando', serif;
+    border: 0px; }
+
+.call {
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 18px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  clear: both;
+  margin-top: 25px;
+  font-family: 'Quando', serif;
+  font-size: 30px;
+  color: #339933;
+  background-color: rgba(241, 241, 242, 0.5);
+  border: 1px solid #000000; }
+
+.sign {
+  font-size: 15px;
+  margin-top: 20px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  font-family: 'Quando', serif;
+  max-width: 500px;
+  padding: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(241, 241, 242, 0.5);
+  border: 1px solid #000000; }
+  .sign h1 {
+    font-size: 25px; }
+  .sign input {
+    font-size: 15px;
+    font-family: 'Quando', serif;
+    float: left;
+    width: 484px;
+    padding: 7px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 0px; }
+  .sign select {
+    font-size: 18px;
+    font-family: 'Quando', serif;
+    border: 0px;
+    padding: 7px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px; }
+  .sign button {
+    width: 60%;
+    margin-top: 5px;
+    text-align: center;
+    background: #F7931D;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 0px;
+    padding: 10px;
+    font-family: 'Quando', serif;
+    font-size: 18px;
+    -webkit-box-shadow: 8px 8px 10px 0 #858585;
+    box-shadow: 8px 8px 10px 0 #858585; }
+
+#nombre, #apellido, #pass, #cpass {
+  float: left;
+  cursor: pointer;
+  width: 232px; }
+
+.row {
+  text-align: center;
+  margin-top: 10px;
+  height: 30px; }
+
+.content {
+  height: 94vh;
+  margin-top: 20px;
+  background: #F1F1F2; }
+  .content h1 {
+    font-size: 20px;
+    color: #339933;
+    font-family: 'Quando', serif; }
+
+.texto {
+  font-size: 20px;
+  padding-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 700px; }
+
+footer {
+  height: 6vh;
+  background: #339933; }
+
+/*# sourceMappingURL=style.css.map */
