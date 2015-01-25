@@ -3,14 +3,32 @@
 	<head>
 		<meta charset="utf-8">
 		<title>GreetHive</title>
-		<script src="js/jquery-ui/external/jquery/jquery.js"></script>
+		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/jquery-ui/jquery-ui.min.js"></script>
 		<script src="js/me.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+		
 		<link rel="shortcut icon" href="/favicon.png">
-
+		<?php if(isset($_GET['s']) AND $_GET['s'] == 'ok' ){ ?>
+			<script>
+			
+			$(document).ready(function(){
+				$( "#succes" ).dialog({
+					width:600,
+					height:350,
+					title: 'Gracias por tu interes',
+					modal:true
+				});
+				$("#cls").click(function(){
+					$("#succes").dialog('close');
+				});
+			})	
+			</script>
+		<?php } ?>
 	</head>
 
 	<body>
@@ -55,19 +73,19 @@
 			buenas experiencias
 		</div>
 		<div class="sign">
-			<form method="post" id="signup" onsubmit="validation();">
+			<form method="post" id="signup" action="process.php">
 			<div class="row" style="margin: 0px;">
-				<input id="nombre" placeholder="Nombre" type="text"   style="margin-right: 5px;" />
-				<input id="apellido" placeholder="Apellido"  />
+				<input name="nombre" id="nombre" placeholder="Nombre" type="text"   style="margin-right: 5px;" />
+				<input name="apellido" id="apellido" placeholder="Apellido"  />
 			</div>
 			<div class="row">
-				<input id="mail" placeholder="Correo elctronico" />
+				<input name="mail" id="mail" placeholder="Correo elctronico" />
 			</div>
 			<div class="row">
 				<input id="cmail" placeholder="Confirmar correo elctronico"  />
 			</div>
 			<div class="row">
-				<input type="password" id="pass" placeholder="Contraseña" style="margin-right: 5px;" />
+				<input type="password" name="pass" id="pass" placeholder="Contraseña" style="margin-right: 5px;" />
 				<input type="password" id="cpass" placeholder="Confirmar contraseña" />
 			</div>
 			<div class="row"><h1>Cumpleaños</h1></div>
@@ -117,7 +135,7 @@
 			</div>
 			
 			<div class="row" style="margin: 10px;">
-				<button>Registrate</button>
+				<button onclick="validation();">Registrate</button>
 			</div>
 			</form>
 		</div>
@@ -157,15 +175,9 @@
 		<footer>
 			
 		</footer>
-<script>
-
-$( "#signup	" ).submit(function( event ) {
- 
-	  val();
-  
-});
-
-
-</script>
+<div id="succes" class="succes">
+	<img src="img/succes.png" width="550" />
+	<button id="cls">CERRAR</button>
+</div>
 	</body>
 </html>

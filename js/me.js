@@ -55,8 +55,6 @@ function validation(){
 		alert('Debe ingresar su fecha de nacimiento');
 		return false;
 	}
-	return true;
-}
-if(validation()){
 	$('#signup').submit();
+	return true;
 }

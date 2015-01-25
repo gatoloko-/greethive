@@ -174,4 +174,8 @@ footer {
   height: 6vh;
   background: #339933; }
 
+.succes {
+  text-align: center;
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
